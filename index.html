@@ -4,41 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
+    <title>to do list</title>
 
     <link rel="stylesheet" href="icomoon/style.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script defer src="main.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script type="module" src="firebase.js"></script>
+
   </head>
+
   <body>
-    <h1>To Do List</h1>
+    <h1>To do list</h1>
+
     <section id="container">
       <div class="task">
-        <span class="icon-star icon"></span>
+        <span class="icon-star icon"> </span>
         <p class="task-text">task 1</p>
         <div>
-          <span class="icon-trash icon"></span>
-          <span class="icon-angry2 icon"></span>
+          <span class="icon-trash icon"> </span>
+          <span class="icon-angry2 icon"> </span>
         </div>
       </div>
+
       <div class="task">
-        <span class="icon-star icon"></span>
+        <span class="icon-star icon"> </span>
         <p class="task-text">task 2</p>
         <div>
-          <span class="icon-trash icon"></span>
-          <span class="icon-angry2 icon"></span>
+          <span class="icon-trash icon"> </span>
+          <span class="icon-angry2 icon"> </span>
         </div>
       </div>
     </section>
+
+    <h2 lang="ar"></h2>
+
     <form>
       <input lang="ar" type="text" id="username" placeholder="اكتب هنا">
-      <button class="icon-upload" type="button" onclick="saveData()">Save</button>
+      <button class="icon-upload" type="button" onclick="saveTask()">Save</button>
     </form>
-    <p id="display"></p>
   </body>
 </html>
